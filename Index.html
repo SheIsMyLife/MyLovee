@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Feliz 1er Mes!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hearts-container" id="hearts"></div>
+
+  <main class="card">
+    <span class="tag">01 Mes Juntos 💜</span>
+    <h1>Feliz Primer Mes, Mi Amor</h1>
+    <p class="subtitle">Llevamos exactamente:</p>
+    
+    <div id="timer" class="timer-grid">
+      <div class="time-box"><span id="days">00</span><label>Días</label></div>
+      <div class="time-box"><span id="hours">00</span><label>Horas</label></div>
+      <div class="time-box"><span id="minutes">00</span><label>Min</label></div>
+      <div class="time-box"><span id="seconds">00</span><label>Seg</label></div>
+    </div>
+
+    <button id="openBtn" onclick="toggleMessage()">Toca para leer mi mensaje 💌</button>
+  </main>
+
+  <!-- Ventana emergente (Modal) con espacio para foto -->
+  <div id="messageModal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <h2>Para ti, mi amor 💜</h2>
+      
+      <!-- Espacio para la foto: Reemplaza "foto.jpg" por el nombre de tu archivo de imagen -->
+      <img src="image/Love.jpg" alt="Nuestra foto" class="modal-photo">
+
+      <p>Hola, mi amor. Cuando leas esto estaré muy contento. Si te preguntas el porqué, quiero decirte que hoy cumplimos nuestro primer mes juntos, de muchos. Cuando llegaste a mi vida fue lo más increíble que me ha pasado, fue muy bonito haber coincidido contigo y quiero que sepas que te amo con toda mi alma, amor mío. ¡Feliz primer mes!</p>
+      
+      <button class="close-btn" onclick="toggleMessage()">Cerrar 💌</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
